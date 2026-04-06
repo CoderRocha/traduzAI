@@ -1,16 +1,89 @@
-# React + Vite
+## TraduzAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O TraduzAI é uma sistema web de tradução de textos, onde o usuário seleciona os idiomas de origem e destino, digita um texto e visualiza a tradução do mesmo em tempo real.
 
-Currently, two official plugins are available:
+## Índice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Stack](#stack)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Instalação](#instalação)
+- [Executando o Projeto](#executando-o-projeto)
+- [Configurações](#configurações)
+- [Autor](#autor)
 
-## React Compiler
+## Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O **TraduzAI** é um sistema de tradução de textos com UI simples e responsiva. O usuário seleciona o idioma de origem e o idioma de destino a partir de uma lista com mais de 80 línguas, e então, digita o texto e clica em traduzir. A solicitação é processada por uma API externa e a resposta é exibida em tempo real.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Tradução de textos**
+  - Seleção de idioma de origem e idioma de destino.
+  - Lista com mais de 80 idiomas suportados.
+  - Troca rápida entre os idiomas selecionados.
+
+- **User Interface**
+  - Layout responsivo (feito com Tailwind CSS).
+
+## Stack
+
+- **Frontend**
+
+  - **React**
+  - **Vite**
+  - **Tailwind CSS**
+
+## Estrutura do Projeto
+
+- **`src/`**
+  - **`App.jsx`**
+  - **`main.jsx`**
+  - **`index.css`**
+  - **`languagesData.js`**
+  - **`Components/TranslatorStart.jsx`**
+  - **`Components/TranslatorApp.jsx`**
+
+## Instalação
+
+Pré-requisitos:
+
+- **Node.js**
+
+1. **Instalar as dependências**
+
+   ```bash
+   npm install
+   ```
+
+2. **Criar o arquivo `.env` a partir do exemplo**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+3. **Configurar a variável de ambiente no `.env`**
+
+   - `VITE_MEMORY_API_URL`
+
+## Executando o Projeto
+
+```bash
+npm run dev
+```
+
+Após rodar o comando, acesse a aplicação em `http://localhost:5173`.
+
+## Configurações
+
+As variáveis de ambiente estão em `.env.example`:
+
+## Autor
+
+**Guilherme Rocha (CoderRocha)**
+
+- GitHub: [CoderRocha](https://github.com/coderrocha)
+- LinkedIn: [Guilherme Rocha](https://www.linkedin.com/in/guilherme-rocha-da-silva)
+
+---
